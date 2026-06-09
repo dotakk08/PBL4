@@ -125,7 +125,7 @@ results/
 ├── viz_CAT2000_val.png
 ├── baseline_final.keras
 └── baseline_weights.weights.h5
-weights/
+weights/ (ngoại trừ với model sử dụng EfficientNetB0 sẽ không có)
 ├── vgg16_hybrid.ckpt.data-00000-of-00001
 └── vgg16_hybrid.ckpt.index
 config.py / loss.py / model.py / data_loader.py / metrics.py / download_*.py
