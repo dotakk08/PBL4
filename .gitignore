@@ -1,0 +1,26 @@
+# Chặn các thư mục chứa dữ liệu và kết quả nặng
+data/
+datasets/
+output/
+predictions/
+
+# Chặn các file checkpoint mô hình nặng (AI/Deep Learning)
+*.h5
+*.pth
+*.pt
+*.pkl
+*.onnx
+checkpoint/
+
+# Chặn môi trường ảo và file rác hệ thống
+venv/
+.env
+__pycache__/
+.ipynb_checkpoints/
+node_modules/
+
+vgg16_hybrid.ckpt*
+*.ckpt*
+data/
+output/
+*.keras
