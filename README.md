@@ -59,7 +59,7 @@ Thay encoder VGG16 bằng **EfficientNet-B0** để tăng hiệu quả tham số
 ## 🛠️ Mô tả các module
 
 - **config.py** — Siêu tham số huấn luyện: learning rate (`1e-5`), batch size (`4`), số epochs (`10`), kích thước ảnh theo từng dataset.
-- **model.py** — Định nghĩa kiến trúc mạng và hàm `load_vgg16_hybrid_weights()` để nạp pretrained weights vào cả 3 nhánh encoder.
+- **model.py** — Định nghĩa kiến trúc mạng và hàm `load_vgg16_hybrid_weights()` (đối với model gốc và model cải tiến decoder với FPN) để nạp pretrained weights vào cả 3 nhánh encoder.
 - **loss.py** — Hàm mất mát KL Divergence (normalize cả `y_true` lẫn `y_pred` trước khi tính).
 - **metrics.py** — Tính các chỉ số đánh giá chuẩn: **KLD**, **CC**, **SIM**, **NSS**, **AUC-Judd**.
 - **data_loader.py** — `tf.data` pipeline: resize giữ aspect ratio (area khi shrink, bicubic khi enlarge), symmetric padding, normalize, tạo 3 scale input cho MSI.
