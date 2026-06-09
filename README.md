@@ -12,7 +12,7 @@ Dự án triển khai, cải tiến và đánh giá hiệu năng của mô hình
 └── msinet_caitien_decoder_fpn/
 ```
 
-Mỗi thư mục có cấu trúc giống nhau:
+Mỗi thư mục có cấu trúc chủ yếu như sau:
 
 ```
 msinet_<tên>/
